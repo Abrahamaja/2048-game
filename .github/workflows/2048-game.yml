@@ -16,8 +16,8 @@ jobs:
       - run: docker build -t $IMAGE_NAME .
       - uses: docker/login-action@v3
         with:
-          username: ${{ secrets.abrahamaja }}
-          password: ${{ secrets.SabelCantik123;? }}
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
       - run: docker push $IMAGE_NAME
 
   deploy:
