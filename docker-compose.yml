@@ -1,0 +1,5 @@
+services:
+  web:
+    image: abrahamaja/2048-abrahamklosesawedu
+    ports:
+      - "9999:80"
